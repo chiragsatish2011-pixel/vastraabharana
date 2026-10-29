@@ -1,0 +1,236 @@
+<section id="collections" class="py-16 sm:py-24 bg-white border-b border-orange-500/10 select-none">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {% if section.settings.heading != blank %}
+      <div class="text-center mb-8 select-none">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-sans font-black uppercase text-neutral-950 tracking-[0.05em] leading-none">
+          {{ section.settings.heading }}
+        </h2>
+        {% if section.settings.subheading != blank %}
+          <p class="text-xs sm:text-sm font-sans font-bold uppercase text-neutral-400 tracking-[0.16em] mt-1 select-none">
+            {{ section.settings.subheading }}
+          </p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <!-- Asymmetrical Bento Grid with Minimal Unobtrusive Typography (Matching Video Frame 20 & 21) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+      
+      <!-- Tile 1: Tall Main Featured Card (2 cols x 2 rows) - Sarees -->
+      <a href="{{ section.settings.tile_1_url | default: '/collections/sarees' }}" class="group relative md:col-span-2 md:row-span-2 rounded-[2px] overflow-hidden bg-neutral-950 min-h-[440px] sm:min-h-[520px] lg:min-h-[580px] flex flex-col justify-end transition-all duration-400 hover:shadow-2xl">
+        <img
+          src="{% if section.settings.tile_1_image != blank %}{{ section.settings.tile_1_image | image_url: width: 1000 }}{% else %}{{ 'hero_model_green.jpg' | asset_url }}{% endif %}"
+          alt="{{ section.settings.tile_1_title | default: 'SAREES' }}"
+          loading="lazy"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-104 transition-transform duration-700"
+        >
+        <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col items-center justify-end text-center w-full pb-6 sm:pb-8 pointer-events-none">
+          <h3 class="text-base sm:text-lg font-sans font-bold uppercase tracking-[0.16em] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] mb-2.5">
+            {{ section.settings.tile_1_title | default: 'SAREES' }}
+          </h3>
+          <span class="pointer-events-auto px-4 sm:px-5 py-1.5 sm:py-2 rounded-[2px] bg-white hover:bg-orange-600 text-neutral-900 hover:text-white font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg active:scale-95">
+            {{ section.settings.tile_1_btn | default: 'See collection' }}
+          </span>
+        </div>
+      </a>
+
+      <!-- Tile 2: Wide ACCESSORIES Card (Matching Video Frame 20 & 21 Right Top) -->
+      <a href="{{ section.settings.tile_2_url | default: '/collections/jewelry' }}" class="group relative md:col-span-1 lg:col-span-2 rounded-[2px] overflow-hidden bg-neutral-950 min-h-[240px] sm:min-h-[270px] flex flex-col justify-end transition-all duration-400 hover:shadow-xl">
+        <img
+          src="{% if section.settings.tile_2_image != blank %}{{ section.settings.tile_2_image | image_url: width: 800 }}{% else %}{{ 'model_jewelry_detail.jpg' | asset_url }}{% endif %}"
+          alt="{{ section.settings.tile_2_title | default: 'ACCESSORIES' }}"
+          loading="lazy"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-104 transition-transform duration-700 opacity-90"
+        >
+        <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col items-center justify-end text-center w-full pb-5 sm:pb-6 pointer-events-none">
+          <h3 class="text-sm sm:text-base font-sans font-bold uppercase tracking-[0.16em] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] mb-2">
+            {{ section.settings.tile_2_title | default: 'ACCESSORIES' }}
+          </h3>
+          <span class="pointer-events-auto px-3.5 sm:px-4 py-1.5 rounded-[2px] bg-white hover:bg-orange-600 text-neutral-900 hover:text-white font-sans font-bold text-[11px] sm:text-xs uppercase tracking-wider transition-all duration-300 shadow-lg active:scale-95">
+            {{ section.settings.tile_2_btn | default: 'See collection' }}
+          </span>
+        </div>
+      </a>
+
+      <!-- Tile 3: Salwar Suits Card (Matching Video Frame 20 & 21 Right Bottom Left) -->
+      <a href="{{ section.settings.tile_3_url | default: '/collections/salwar-suits' }}" class="group relative rounded-[2px] overflow-hidden bg-neutral-950 min-h-[240px] sm:min-h-[270px] flex flex-col justify-end transition-all duration-400 hover:shadow-xl">
+        <img
+          src="{% if section.settings.tile_3_image != blank %}{{ section.settings.tile_3_image | image_url: width: 600 }}{% else %}{{ 'model_saree_gold.jpg' | asset_url }}{% endif %}"
+          alt="{{ section.settings.tile_3_title | default: 'SALWAR SUITS' }}"
+          loading="lazy"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-104 transition-transform duration-700"
+        >
+        <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col items-center justify-end text-center w-full pb-5 sm:pb-6 pointer-events-none">
+          <h3 class="text-sm sm:text-base font-sans font-bold uppercase tracking-[0.16em] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] mb-2">
+            {{ section.settings.tile_3_title | default: 'SALWAR SUITS' }}
+          </h3>
+          <span class="pointer-events-auto px-3.5 sm:px-4 py-1.5 rounded-[2px] bg-white hover:bg-orange-600 text-neutral-900 hover:text-white font-sans font-bold text-[11px] sm:text-xs uppercase tracking-wider transition-all duration-300 shadow-lg active:scale-95">
+            {{ section.settings.tile_3_btn | default: 'See collection' }}
+          </span>
+        </div>
+      </a>
+
+      <!-- Tile 4: Combos Card (Matching Video Frame 20 & 21 Right Bottom Right) -->
+      <a href="{{ section.settings.tile_4_url | default: '/collections/combos' }}" class="group relative rounded-[2px] overflow-hidden bg-neutral-950 min-h-[240px] sm:min-h-[270px] flex flex-col justify-end transition-all duration-400 hover:shadow-xl">
+        <img
+          src="{% if section.settings.tile_4_image != blank %}{{ section.settings.tile_4_image | image_url: width: 600 }}{% else %}{{ 'saris_banner.jpg' | asset_url }}{% endif %}"
+          alt="{{ section.settings.tile_4_title | default: 'COMBOS' }}"
+          loading="lazy"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-104 transition-transform duration-700"
+        >
+        <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col items-center justify-end text-center w-full pb-5 sm:pb-6 pointer-events-none">
+          <h3 class="text-sm sm:text-base font-sans font-bold uppercase tracking-[0.16em] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] mb-2">
+            {{ section.settings.tile_4_title | default: 'COMBOS' }}
+          </h3>
+          <span class="pointer-events-auto px-3.5 sm:px-4 py-1.5 rounded-[2px] bg-white hover:bg-orange-600 text-neutral-900 hover:text-white font-sans font-bold text-[11px] sm:text-xs uppercase tracking-wider transition-all duration-300 shadow-lg active:scale-95">
+            {{ section.settings.tile_4_btn | default: 'See collection' }}
+          </span>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Artisan Collections Bento",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Section Subheading",
+      "default": ""
+    },
+    {
+      "type": "header",
+      "content": "Tile 1 (Main Featured Tall Card)"
+    },
+    {
+      "type": "text",
+      "id": "tile_1_title",
+      "label": "Tile 1 Title",
+      "default": "SAREES"
+    },
+    {
+      "type": "image_picker",
+      "id": "tile_1_image",
+      "label": "Tile 1 Image"
+    },
+    {
+      "type": "url",
+      "id": "tile_1_url",
+      "label": "Tile 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "tile_1_btn",
+      "label": "Tile 1 Button Text",
+      "default": "See collection"
+    },
+    {
+      "type": "header",
+      "content": "Tile 2 (Top Wide Card)"
+    },
+    {
+      "type": "text",
+      "id": "tile_2_title",
+      "label": "Tile 2 Title",
+      "default": "ACCESSORIES"
+    },
+    {
+      "type": "image_picker",
+      "id": "tile_2_image",
+      "label": "Tile 2 Image"
+    },
+    {
+      "type": "url",
+      "id": "tile_2_url",
+      "label": "Tile 2 Link"
+    },
+    {
+      "type": "text",
+      "id": "tile_2_btn",
+      "label": "Tile 2 Button Text",
+      "default": "See collection"
+    },
+    {
+      "type": "header",
+      "content": "Tile 3 (Bottom Left Card)"
+    },
+    {
+      "type": "text",
+      "id": "tile_3_title",
+      "label": "Tile 3 Title",
+      "default": "SALWAR SUITS"
+    },
+    {
+      "type": "image_picker",
+      "id": "tile_3_image",
+      "label": "Tile 3 Image"
+    },
+    {
+      "type": "url",
+      "id": "tile_3_url",
+      "label": "Tile 3 Link"
+    },
+    {
+      "type": "text",
+      "id": "tile_3_btn",
+      "label": "Tile 3 Button Text",
+      "default": "See collection"
+    },
+    {
+      "type": "header",
+      "content": "Tile 4 (Bottom Right Card)"
+    },
+    {
+      "type": "text",
+      "id": "tile_4_title",
+      "label": "Tile 4 Title",
+      "default": "COMBOS"
+    },
+    {
+      "type": "image_picker",
+      "id": "tile_4_image",
+      "label": "Tile 4 Image"
+    },
+    {
+      "type": "url",
+      "id": "tile_4_url",
+      "label": "Tile 4 Link"
+    },
+    {
+      "type": "text",
+      "id": "tile_4_btn",
+      "label": "Tile 4 Button Text",
+      "default": "See collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Artisan Collections Bento"
+    }
+  ]
+}
+{% endschema %}

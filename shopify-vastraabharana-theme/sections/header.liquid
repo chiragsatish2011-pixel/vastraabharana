@@ -1,0 +1,95 @@
+<header id="vastra-header" class="fixed top-0 inset-x-0 z-50 pointer-events-none transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+  <div id="vastra-header-inner" class="pointer-events-auto transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-3.5 sm:py-4.5 bg-gradient-to-b from-[#0d0604]/90 via-[#0d0604]/50 to-transparent border-b border-white/[0.06] backdrop-blur-[2px]">
+    <div class="relative flex items-center justify-between select-none min-h-[42px] sm:min-h-[46px]">
+      
+      <!-- LEFT: Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-[11px] font-sans font-bold uppercase tracking-[0.12em] text-neutral-300 z-10">
+        <a href="#collections" class="hover:text-white transition-colors py-1">Collections</a>
+        <a href="/collections/sarees" class="hover:text-white transition-colors py-1">Mysore Silk</a>
+        <a href="/collections/salwar-suits" class="hover:text-white transition-colors py-1">Suits</a>
+        <a href="/collections/combos" class="text-orange-400 hover:text-orange-300 transition-colors flex items-center gap-1.5 py-1">
+          <span>Combos</span>
+          <span class="text-[9px] bg-orange-600 text-white px-1.5 py-0.2 rounded-sm font-black tracking-normal shadow-sm">HOT</span>
+        </a>
+      </nav>
+
+      <!-- CENTER: Authentic Brand Logo (Cursive Signature Script - Perfect Dead Center) -->
+      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-center z-20 pointer-events-auto whitespace-nowrap max-w-[calc(100%-120px)] sm:max-w-none">
+        <a href="/" class="group flex flex-col items-center">
+          <span id="header-logo-text" class="text-white group-hover:text-orange-400 transition-all duration-300 leading-none text-[21px] sm:text-2xl lg:text-[32px]" style="font-family: 'Alex Brush', 'Playfair Display', cursive, serif; font-weight: 400; letter-spacing: 0.03em; text-shadow: 0 2px 12px rgba(0,0,0,0.6);">
+            {{ section.settings.logo_text | default: 'Vastra Abharana' }}
+          </span>
+          <span id="header-logo-sub" class="transition-all duration-300 uppercase text-orange-400/90 font-sans font-bold text-[6.5px] sm:text-[7.5px] tracking-[0.28em] mt-0.5 sm:mt-1">
+            {{ section.settings.logo_subtext | default: 'Bengaluru • Estd 2018' }}
+          </span>
+        </a>
+      </div>
+
+      <!-- RIGHT: Cart Trigger Button -->
+      <div class="flex items-center gap-2 z-10 ml-auto">
+        <button
+          onclick="window.openVastraCart && window.openVastraCart()"
+          class="flex items-center gap-1.5 sm:gap-2 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white px-3 sm:px-4 py-1 sm:py-1.5 rounded-full border border-orange-400/40 transition-all duration-300 shadow-md shadow-orange-600/30 active:scale-95 group"
+          aria-label="Shopping Cart"
+        >
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          <span id="header-cart-count" class="text-[11px] sm:text-xs font-sans font-bold tracking-wider">{{ cart.item_count }}</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<script>
+  (function() {
+    var headerInner = document.getElementById('vastra-header-inner');
+    var logoText = document.getElementById('header-logo-text');
+    var logoSub = document.getElementById('header-logo-sub');
+    var isScrolled = false;
+
+    window.addEventListener('scroll', function() {
+      var scrolled = window.scrollY > 40;
+      if (scrolled !== isScrolled) {
+        isScrolled = scrolled;
+        if (isScrolled) {
+          headerInner.className = 'pointer-events-auto transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] max-w-5xl mx-3 sm:mx-auto mt-2 sm:mt-3 px-4 sm:px-6 py-2 sm:py-2.5 rounded-full bg-neutral-950/85 backdrop-blur-xl border border-white/20 shadow-[0_16px_40px_rgba(0,0,0,0.60)]';
+          if (logoText) {
+            logoText.className = 'text-white group-hover:text-orange-400 transition-all duration-300 leading-none text-xl sm:text-2xl';
+          }
+          if (logoSub) {
+            logoSub.className = 'transition-all duration-300 uppercase text-orange-400/90 font-sans font-bold text-[6.5px] tracking-[0.25em] opacity-80 mt-0.5';
+          }
+        } else {
+          headerInner.className = 'pointer-events-auto transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-3.5 sm:py-4.5 bg-gradient-to-b from-[#0d0604]/90 via-[#0d0604]/50 to-transparent border-b border-white/[0.06] backdrop-blur-[2px]';
+          if (logoText) {
+            logoText.className = 'text-white group-hover:text-orange-400 transition-all duration-300 leading-none text-2xl sm:text-3xl lg:text-[33px]';
+          }
+          if (logoSub) {
+            logoSub.className = 'transition-all duration-300 uppercase text-orange-400/90 font-sans font-bold text-[7px] sm:text-[7.5px] tracking-[0.32em] mt-1';
+          }
+        }
+      }
+    }, { passive: true });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Header Sticky Island",
+  "settings": [
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Brand Script Logo",
+      "default": "Vastra Abharana"
+    },
+    {
+      "type": "text",
+      "id": "logo_subtext",
+      "label": "Brand Subtitle",
+      "default": "Bengaluru • Estd 2018"
+    }
+  ]
+}
+{% endschema %}

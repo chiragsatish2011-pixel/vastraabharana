@@ -1,0 +1,219 @@
+{
+  "totalProducts": 1993,
+  "totalVariants": 3725,
+  "totalImages": 2378,
+  "priceRangeINR": {
+    "min": 150,
+    "max": 3895,
+    "median": 945,
+    "average": 1014
+  },
+  "earliestProductCreated": "2024-04-30T19:34:48+05:30",
+  "latestProductCreated": "2026-10-28T12:22:51+05:30",
+  "typesBreakdown": {
+    "saree": 782,
+    "Uncategorized": 142,
+    "salwar": 761,
+    "blouse": 101,
+    "Accessories": 95,
+    "Gifts": 21,
+    "Nighty": 59,
+    "Vintage": 3,
+    "Kurta": 29
+  },
+  "topVendors": {
+    "Vastrabharana": 1694,
+    "Vastraabharana": 299
+  },
+  "topTags": [
+    [
+      "Kurta",
+      478
+    ],
+    [
+      "Queen's",
+      280
+    ],
+    [
+      "Designer dresses",
+      224
+    ],
+    [
+      "pant",
+      129
+    ],
+    [
+      "Accessories",
+      89
+    ],
+    [
+      "Cord sets",
+      59
+    ],
+    [
+      "Gifts",
+      21
+    ],
+    [
+      "Heritage",
+      12
+    ],
+    [
+      "Arani",
+      3
+    ]
+  ],
+  "collectionsCount": 30,
+  "collectionsList": [
+    {
+      "id": 504152260837,
+      "title": "3XL Dresses",
+      "handle": "3xl-dresses-collection"
+    },
+    {
+      "id": 388275241189,
+      "title": "Accessories",
+      "handle": "accessories"
+    },
+    {
+      "id": 514011922661,
+      "title": "Ashada Sale",
+      "handle": "ashada-sale"
+    },
+    {
+      "id": 388277698789,
+      "title": "Bangle Boxes",
+      "handle": "bangle-boxes"
+    },
+    {
+      "id": 388277567717,
+      "title": "Bangles",
+      "handle": "bangles"
+    },
+    {
+      "id": 404441858277,
+      "title": "Blouses",
+      "handle": "blouses"
+    },
+    {
+      "id": 471851368677,
+      "title": "Bottom Wear",
+      "handle": "bottom-wear"
+    },
+    {
+      "id": 404710359269,
+      "title": "Budget Range collection",
+      "handle": "wholesale-sarees"
+    },
+    {
+      "id": 520149991653,
+      "title": "Buy 3 at 1200/-",
+      "handle": "buy-3-at-1200"
+    },
+    {
+      "id": 520180334821,
+      "title": "Buy 3 at 1400/-",
+      "handle": "buy-3-at-1400"
+    },
+    {
+      "id": 519007961317,
+      "title": "Buy 3 Sarees for 2500",
+      "handle": "buy-3-sarees-for-2500"
+    },
+    {
+      "id": 520149827813,
+      "title": "Combo Dress",
+      "handle": "combo-dress-1"
+    },
+    {
+      "id": 502106489061,
+      "title": "Combo Dress @ 3 for 2100/-",
+      "handle": "combo-dress"
+    },
+    {
+      "id": 509169500389,
+      "title": "Combo Dress @ 3 for 2500/-",
+      "handle": "combo-dress-va2"
+    },
+    {
+      "id": 474545619173,
+      "title": "COMBO OFFER DRESSES",
+      "handle": "combo-offer-dresses"
+    },
+    {
+      "id": 520149729509,
+      "title": "Combo sarees",
+      "handle": "combo-sarees"
+    },
+    {
+      "id": 516861329637,
+      "title": "Cord - Sets",
+      "handle": "cord-sets"
+    },
+    {
+      "id": 509226647781,
+      "title": "Cotton sarees",
+      "handle": "cotton-sarees"
+    },
+    {
+      "id": 388277600485,
+      "title": "Earrings",
+      "handle": "earrings"
+    },
+    {
+      "id": 392260714725,
+      "title": "Feeding & Maternity wear",
+      "handle": "maternity-feeding-gowns"
+    },
+    {
+      "id": 474351796453,
+      "title": "Festive Sarees",
+      "handle": "varamahalakshmi-festive-sarees"
+    },
+    {
+      "id": 388275273957,
+      "title": "Gifts",
+      "handle": "gifts"
+    },
+    {
+      "id": 494615101669,
+      "title": "Jewellery collection",
+      "handle": "jewellery-collection"
+    },
+    {
+      "id": 506346799333,
+      "title": "Kurtis",
+      "handle": "kurtis-combo"
+    },
+    {
+      "id": 508551921893,
+      "title": "Kurtis Collections",
+      "handle": "kurtis-collections"
+    },
+    {
+      "id": 513869349093,
+      "title": "Linen Blended Pants",
+      "handle": "linen-blended-pants"
+    },
+    {
+      "id": 513712750821,
+      "title": "Linen Pants",
+      "handle": "linen-pants"
+    },
+    {
+      "id": 513869283557,
+      "title": "Lycra Pants",
+      "handle": "lycra-pants"
+    },
+    {
+      "id": 493250248933,
+      "title": "Munga silk sarees",
+      "handle": "mung-silk-sarees-collection"
+    },
+    {
+      "id": 470917480677,
+      "title": "Mysore Silk Collections",
+      "handle": "mysore-silk-collections"
+    }
+  ]
+}

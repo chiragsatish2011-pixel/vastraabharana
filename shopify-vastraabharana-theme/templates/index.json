@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "hero_editorial_3d": {
+      "type": "hero-editorial-3d",
+      "settings": {
+        "title_top": "BE THE",
+        "title_bottom": "DESI GIRL",
+        "cta_label": "SHOP NOW",
+        "cta_url": "#collections"
+      }
+    },
+    "artisan_collections": {
+      "type": "artisan-collections",
+      "settings": {}
+    },
+    "product_catalog": {
+      "type": "product-catalog",
+      "settings": {}
+    },
+    "spring_showcase": {
+      "type": "spring-showcase",
+      "settings": {}
+    },
+    "stats_counter": {
+      "type": "stats-counter",
+      "settings": {}
+    },
+    "welded_archive_2026": {
+      "type": "welded-archive-2026",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero_editorial_3d",
+    "artisan_collections",
+    "product_catalog",
+    "spring_showcase",
+    "stats_counter",
+    "welded_archive_2026"
+  ]
+}

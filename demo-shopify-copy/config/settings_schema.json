@@ -1,0 +1,27 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Vastra Abharana - Materia Editorial Theme",
+    "theme_version": "1.0.0",
+    "theme_author": "Google Deepmind Antigravity Team",
+    "theme_documentation_url": "https://vastraabharana.com",
+    "theme_support_url": "https://vastraabharana.com/pages/contact"
+  },
+  {
+    "name": "Brand Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "primary_accent",
+        "label": "Primary Saffron Accent",
+        "default": "#ea580c"
+      },
+      {
+        "type": "color",
+        "id": "secondary_amber",
+        "label": "Secondary Molten Amber",
+        "default": "#f59e0b"
+      }
+    ]
+  }
+]

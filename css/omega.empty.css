@@ -1,0 +1,18 @@
+.omega-widget-empty {
+  display: none;
+}
+
+.omega-widget-empty:first-of-type {
+    display: block;
+    background-color: rgba(255, 241, 228, 1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    align-content: center;
+    padding-left: 2rem;
+    min-height: 12rem;
+}
+
+.omega-widget-empty_text {
+    font-weight: 600;
+}

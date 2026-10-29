@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sarees",
+    "title": "Mysore & Festive Sarees",
+    "subtitle": "780+ Handcrafted Drapes",
+    "handle": "mysore-silk-collections",
+    "badge": "ROYAL WEAVES",
+    "image": "https://vastraabharana.com/cdn/shop/files/rn-image_picker_lib_temp_444fa1e0-b764-4e58-b542-fdb879a35a29.jpg?v=1792586379&width=800",
+    "description": "Authentic Mysore silk and festive bridal weaves woven by master artisans."
+  },
+  {
+    "id": "salwars",
+    "title": "Aarvi Pure Cotton & Suits",
+    "subtitle": "760+ Designer Ensembles",
+    "handle": "wholesale-kurtis",
+    "badge": "BESTSELLER",
+    "image": "https://vastraabharana.com/cdn/shop/files/rn-image_picker_lib_temp_cdf39921-0cf7-43c8-aafa-0fda6d9cc775.png?v=1792586382&width=800",
+    "description": "Soft Malchanderi, A-line silhouettes and pure cotton festive suits."
+  },
+  {
+    "id": "combos",
+    "title": "Viral Combo Offers",
+    "subtitle": "Buy 3 @ ₹1,200 & ₹1,400",
+    "handle": "buy-3-at-1200",
+    "badge": "MAX SAVINGS",
+    "image": "https://vastraabharana.com/cdn/shop/files/rn-image_picker_lib_temp_1454070c-5207-40ea-8cd2-029258775d68.jpg?v=1792586379&width=800",
+    "description": "Mix & match 3 premium ethnic sets for everyday luxury at unmissable prices."
+  },
+  {
+    "id": "blouses",
+    "title": "Designer Blouses",
+    "subtitle": "100+ Zari & Maggam Work",
+    "handle": "blouses",
+    "badge": "HAND-EMBROIDERED",
+    "image": "https://vastraabharana.com/cdn/shop/collections/Blouses.jpg?v=1767719872&width=800",
+    "description": "Ready-to-wear and tailored blouses with intricate zari motifs."
+  },
+  {
+    "id": "jewellery",
+    "title": "Temple Jewelry & Crystals",
+    "subtitle": "95+ Handpicked Ornaments",
+    "handle": "jewellery-collection",
+    "badge": "HERITAGE SHINE",
+    "image": "https://vastraabharana.com/cdn/shop/files/IMG-20260329_135103_png.png?v=1774789653&width=800",
+    "description": "Gold-plated ruby crystal necklaces, antique bangles, and bridal haras."
+  }
+]

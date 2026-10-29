@@ -1,0 +1,113 @@
+<section class="py-16 sm:py-24 bg-white border-b border-neutral-100 select-none">
+  <div class="w-full max-w-[97%] xl:max-w-[1560px] mx-auto px-2 sm:px-4">
+    
+    <!-- 3 Contiguous Rectangles Divided by Hairline Border (Matching Reference Video Frame 32 & 33) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-neutral-200 border border-neutral-200 rounded-[2px] bg-white overflow-hidden shadow-sm min-h-[520px] sm:min-h-[560px] lg:min-h-[600px]">
+      
+      <!-- Left Rectangle: Editorial Model Image at Scale -->
+      <div class="bg-[#fafaf9] p-6 sm:p-8 lg:p-10 flex items-center justify-center relative overflow-hidden group">
+        <div class="w-full h-full max-h-[460px] lg:max-h-[500px] flex items-center justify-center overflow-hidden rounded-[2px] bg-white shadow-sm border border-neutral-200/60">
+          <img
+            src="{% if section.settings.image_left != blank %}{{ section.settings.image_left | image_url: width: 800 }}{% else %}{{ 'saris_banner.jpg' | asset_url }}{% endif %}"
+            alt="Vastra Abharana Royal Mysore Silk Model"
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover object-center group-hover:scale-104 transition-transform duration-700"
+          >
+        </div>
+      </div>
+
+      <!-- Center Rectangle: Brand Story & High-Fashion Typography -->
+      <div class="bg-white p-8 sm:p-12 lg:p-14 flex flex-col items-center justify-center text-center space-y-6 relative">
+        <div class="space-y-1.5 select-none">
+          <h3 class="text-3xl sm:text-4xl lg:text-5xl font-sans font-black uppercase text-neutral-950 tracking-[0.05em] leading-none">
+            {{ section.settings.title_top | default: 'SPRING' }}
+          </h3>
+          <h3 class="text-3xl sm:text-4xl lg:text-5xl font-sans font-black uppercase text-neutral-950 tracking-[0.05em] leading-none">
+            {{ section.settings.title_bottom | default: 'COLLECTION' }}
+          </h3>
+        </div>
+
+        <p class="text-xs sm:text-sm text-neutral-600 font-sans font-normal max-w-sm leading-relaxed">
+          {{ section.settings.story_text | default: 'Handcrafted in Bengaluru since 2018. Pure raw Mysore silks, handwoven golden zari motifs, and heirloom craftsmanship celebrating modern Indian royalty.' }}
+        </p>
+
+        <div class="pt-2">
+          <a
+            href="{{ section.settings.cta_link | default: '#catalog' }}"
+            class="inline-flex items-center justify-center px-8 sm:px-10 py-3 rounded-[2px] border border-neutral-900 hover:border-orange-600 bg-transparent hover:bg-neutral-950 text-neutral-950 hover:text-white font-sans font-bold text-xs uppercase tracking-[0.18em] transition-all duration-300 shadow-sm active:scale-95"
+          >
+            {{ section.settings.cta_text | default: 'Shop Now' }}
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Rectangle: Product at Scale on Light Background -->
+      <div class="bg-[#fafaf9] p-6 sm:p-8 lg:p-10 flex items-center justify-center relative overflow-hidden group">
+        <div class="w-full h-full max-h-[460px] lg:max-h-[500px] flex items-center justify-center overflow-hidden rounded-[2px] bg-white shadow-sm border border-neutral-200/60 p-4 sm:p-6">
+          <img
+            src="{% if section.settings.image_right != blank %}{{ section.settings.image_right | image_url: width: 800 }}{% else %}{{ 'model_jewelry_detail.jpg' | asset_url }}{% endif %}"
+            alt="22K Gold Handcrafted Temple Jewelry"
+            loading="lazy"
+            decoding="async"
+            class="max-h-full max-w-full object-contain group-hover:scale-106 transition-transform duration-700"
+          >
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Spring Showcase Editorial",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title_top",
+      "label": "Title Top Line",
+      "default": "SPRING"
+    },
+    {
+      "type": "text",
+      "id": "title_bottom",
+      "label": "Title Bottom Line",
+      "default": "COLLECTION"
+    },
+    {
+      "type": "textarea",
+      "id": "story_text",
+      "label": "Story Paragraph",
+      "default": "Handcrafted in Bengaluru since 2018. Pure raw Mysore silks, handwoven golden zari motifs, and heirloom craftsmanship celebrating modern Indian royalty."
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_left",
+      "label": "Left Editorial Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_right",
+      "label": "Right Product Detail Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Spring Showcase Editorial"
+    }
+  ]
+}
+{% endschema %}

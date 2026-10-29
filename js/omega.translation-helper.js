@@ -1,0 +1,1 @@
+window.OmegaTranslationHelper={getLocalizedText:function(t,e){if(!t)return"";const i=t?.currentLocale||"en",n=`${e}Translations`,o=t?.[n];return o&&"object"==typeof o&&o[i]?o[i]:t?.[e]||""},getLocalizedTitle:function(t){return this.getLocalizedText(t,"title")},getLocalizedSubtitle:function(t){return this.getLocalizedText(t,"subtitle")}};

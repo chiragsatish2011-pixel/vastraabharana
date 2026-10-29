@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+storefront/node_modules/
+bin/
+
+# Backups
+backups/
+
+# Temporary / OS
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Production output (built on demand)
+storefront/dist/

@@ -1,0 +1,127 @@
+<section id="metrics" class="py-14 sm:py-20 bg-white select-none">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-3 gap-4 sm:gap-8 text-center">
+      
+      <div class="flex flex-col items-center justify-center">
+        <span class="vastra-counter font-sans font-light sm:font-normal text-3xl sm:text-5xl lg:text-6xl text-neutral-900 tracking-tight leading-none" data-target="{{ section.settings.stat_1_number | default: 3386 }}">
+          0
+        </span>
+        <span class="text-[11px] sm:text-xs lg:text-[13px] font-sans font-medium text-neutral-500 tracking-wide mt-2.5 sm:mt-3">
+          {{ section.settings.stat_1_label | default: 'FOLLOWERS' }}
+        </span>
+      </div>
+
+      <div class="flex flex-col items-center justify-center">
+        <span class="vastra-counter font-sans font-light sm:font-normal text-3xl sm:text-5xl lg:text-6xl text-neutral-900 tracking-tight leading-none" data-target="{{ section.settings.stat_2_number | default: 1993 }}">
+          0
+        </span>
+        <span class="text-[11px] sm:text-xs lg:text-[13px] font-sans font-medium text-neutral-500 tracking-wide mt-2.5 sm:mt-3">
+          {{ section.settings.stat_2_label | default: 'Happy Patrons' }}
+        </span>
+      </div>
+
+      <div class="flex flex-col items-center justify-center">
+        <span class="vastra-counter font-sans font-light sm:font-normal text-3xl sm:text-5xl lg:text-6xl text-neutral-900 tracking-tight leading-none" data-target="{{ section.settings.stat_3_number | default: 400 }}">
+          0
+        </span>
+        <span class="text-[11px] sm:text-xs lg:text-[13px] font-sans font-medium text-neutral-500 tracking-wide mt-2.5 sm:mt-3">
+          {{ section.settings.stat_3_label | default: 'Master Weavers' }}
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    var counters = document.querySelectorAll('.vastra-counter');
+    var section = document.getElementById('metrics');
+    if (!section || counters.length === 0) return;
+
+    var observer = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        counters.forEach(function(el) {
+          var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+          var start = null;
+          var duration = 1200;
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            var progress = Math.min((timestamp - start) / duration, 1);
+            var ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+            el.textContent = Math.floor(ease * target).toLocaleString();
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            }
+          }
+          window.requestAnimationFrame(step);
+        });
+      } else {
+        counters.forEach(function(el) { el.textContent = '0'; });
+      }
+    }, { threshold: 0.2 });
+
+    observer.observe(section);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Brand Metrics Counter",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Metric 1"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_number",
+      "label": "Number Target",
+      "default": "3386"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_label",
+      "label": "Label",
+      "default": "FOLLOWERS"
+    },
+    {
+      "type": "header",
+      "content": "Metric 2"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_number",
+      "label": "Number Target",
+      "default": "1993"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_label",
+      "label": "Label",
+      "default": "Happy Patrons"
+    },
+    {
+      "type": "header",
+      "content": "Metric 3"
+    },
+    {
+      "type": "text",
+      "id": "stat_3_number",
+      "label": "Number Target",
+      "default": "400"
+    },
+    {
+      "type": "text",
+      "id": "stat_3_label",
+      "label": "Label",
+      "default": "Master Weavers"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Metrics Counter"
+    }
+  ]
+}
+{% endschema %}

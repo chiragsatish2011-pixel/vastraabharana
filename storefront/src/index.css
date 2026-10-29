@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #ea580c;  /* Saffron Orange */
+  --color-gold: #f59e0b;     /* Molten Turmeric Amber */
+  --color-dark: #111111;
+  --color-light: #ffffff;
+  --color-surface: #fffbf5;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Minimalist Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #fde68a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Unified High-End Modern Geometric Display Font (Matching User's Favorite Spring Showcase) */
+.font-display-luxury {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 0.95;
+}
+
+.font-bounded {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 0.95;
+}
+
+/* Clean Google Sans Body Typography */
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Subtle Warm Festive Brand Gradient Card */
+.card-brand-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #fffbf5 50%, #fff7ed 100%);
+  border: 1px solid rgba(234, 88, 12, 0.16);
+  box-shadow: 0 16px 45px -8px rgba(234, 88, 12, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-brand-gradient:hover {
+  border-color: rgba(234, 88, 12, 0.4);
+  box-shadow: 0 24px 55px -10px rgba(234, 88, 12, 0.16);
+  transform: translateY(-4px) scale(1.015);
+}
+
+/* Continuous Smooth Marquee Animations */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-smooth {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 26s linear infinite;
+}
+
+.animate-marquee-fast-smooth {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 18s linear infinite;
+}

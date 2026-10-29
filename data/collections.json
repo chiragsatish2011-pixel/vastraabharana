@@ -1,0 +1,349 @@
+{
+  "collections": [
+    {
+      "id": 504152260837,
+      "title": "3XL Dresses",
+      "handle": "3xl-dresses-collection",
+      "description": null,
+      "published_at": "2026-03-23T17:13:50+05:30",
+      "updated_at": "2026-10-24T11:47:48+05:30",
+      "image": null,
+      "products_count": 225
+    },
+    {
+      "id": 388275241189,
+      "title": "Accessories",
+      "handle": "accessories",
+      "description": "",
+      "published_at": "2021-12-20T12:02:31+05:30",
+      "updated_at": "2026-05-26T21:54:04+05:30",
+      "image": null,
+      "products_count": 196
+    },
+    {
+      "id": 514011922661,
+      "title": "Ashada Sale",
+      "handle": "ashada-sale",
+      "description": null,
+      "published_at": "2026-07-23T12:33:52+05:30",
+      "updated_at": "2026-09-21T16:44:54+05:30",
+      "image": null,
+      "products_count": 131
+    },
+    {
+      "id": 388277698789,
+      "title": "Bangle Boxes",
+      "handle": "bangle-boxes",
+      "description": "",
+      "published_at": "2021-12-20T13:06:17+05:30",
+      "updated_at": "2026-08-13T17:51:12+05:30",
+      "image": null,
+      "products_count": 50
+    },
+    {
+      "id": 388277567717,
+      "title": "Bangles",
+      "handle": "bangles",
+      "description": "",
+      "published_at": "2021-12-20T13:04:02+05:30",
+      "updated_at": "2026-05-26T21:54:04+05:30",
+      "image": null,
+      "products_count": 30
+    },
+    {
+      "id": 404441858277,
+      "title": "Blouses",
+      "handle": "blouses",
+      "description": "",
+      "published_at": "2022-12-13T14:25:08+05:30",
+      "updated_at": "2026-10-18T10:39:46+05:30",
+      "image": {
+        "id": 1700611621093,
+        "created_at": "2026-01-06T22:47:52+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/Blouses.jpg?v=1767719872",
+        "alt": null
+      },
+      "products_count": 420
+    },
+    {
+      "id": 471851368677,
+      "title": "Bottom Wear",
+      "handle": "bottom-wear",
+      "description": "",
+      "published_at": "2025-05-19T12:29:50+05:30",
+      "updated_at": "2026-10-28T16:40:48+05:30",
+      "image": {
+        "id": 1700609589477,
+        "created_at": "2026-01-06T13:13:05+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/IMG-20250519_144629.jpg?v=1767685385",
+        "alt": null
+      },
+      "products_count": 273
+    },
+    {
+      "id": 404710359269,
+      "title": "Budget Range collection",
+      "handle": "wholesale-sarees",
+      "description": "",
+      "published_at": "2025-12-22T17:42:52+05:30",
+      "updated_at": "2026-10-23T16:44:09+05:30",
+      "image": {
+        "id": 1691250262245,
+        "created_at": "2024-07-23T14:38:37+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/rn-image_picker_lib_temp_42763c5e-dea8-45a1-abb2-4f06cc4c56b2.png?v=1772433037",
+        "alt": ""
+      },
+      "products_count": 1568
+    },
+    {
+      "id": 520149991653,
+      "title": "Buy 3 at 1200/-",
+      "handle": "buy-3-at-1200",
+      "description": null,
+      "published_at": "2026-09-03T18:52:20+05:30",
+      "updated_at": "2026-10-24T11:38:18+05:30",
+      "image": null,
+      "products_count": 53
+    },
+    {
+      "id": 520180334821,
+      "title": "Buy 3 at 1400/-",
+      "handle": "buy-3-at-1400",
+      "description": null,
+      "published_at": "2026-09-04T11:20:36+05:30",
+      "updated_at": "2026-10-28T16:40:48+05:30",
+      "image": null,
+      "products_count": 108
+    },
+    {
+      "id": 519007961317,
+      "title": "Buy 3 Sarees for 2500",
+      "handle": "buy-3-sarees-for-2500",
+      "description": null,
+      "published_at": "2026-08-24T14:25:04+05:30",
+      "updated_at": "2026-10-28T16:40:48+05:30",
+      "image": null,
+      "products_count": 290
+    },
+    {
+      "id": 520149827813,
+      "title": "Combo Dress",
+      "handle": "combo-dress-1",
+      "description": null,
+      "published_at": "2026-09-03T18:47:17+05:30",
+      "updated_at": "2026-09-03T18:47:18+05:30",
+      "image": null,
+      "products_count": 0
+    },
+    {
+      "id": 502106489061,
+      "title": "Combo Dress @ 3 for 2100/-",
+      "handle": "combo-dress",
+      "description": null,
+      "published_at": "2026-03-06T10:26:00+05:30",
+      "updated_at": "2026-10-28T16:40:48+05:30",
+      "image": {
+        "id": 1701047763173,
+        "created_at": "2026-03-06T10:25:59+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/rn-image_picker_lib_temp_80fd7a15-ebd3-46fa-88d4-eac750e1224d.png?v=1772772960",
+        "alt": ""
+      },
+      "products_count": 798
+    },
+    {
+      "id": 509169500389,
+      "title": "Combo Dress @ 3 for 2500/-",
+      "handle": "combo-dress-va2",
+      "description": null,
+      "published_at": "2026-05-27T19:55:01+05:30",
+      "updated_at": "2026-10-28T17:09:08+05:30",
+      "image": null,
+      "products_count": 317
+    },
+    {
+      "id": 474545619173,
+      "title": "COMBO OFFER DRESSES",
+      "handle": "combo-offer-dresses",
+      "description": "",
+      "published_at": "2025-07-04T19:58:51+05:30",
+      "updated_at": "2026-05-31T18:09:39+05:30",
+      "image": null,
+      "products_count": 119
+    },
+    {
+      "id": 520149729509,
+      "title": "Combo sarees",
+      "handle": "combo-sarees",
+      "description": null,
+      "published_at": "2026-09-03T18:44:26+05:30",
+      "updated_at": "2026-09-03T18:44:26+05:30",
+      "image": null,
+      "products_count": 0
+    },
+    {
+      "id": 516861329637,
+      "title": "Cord - Sets",
+      "handle": "cord-sets",
+      "description": null,
+      "published_at": "2026-08-03T18:29:56+05:30",
+      "updated_at": "2026-10-28T17:09:08+05:30",
+      "image": null,
+      "products_count": 100
+    },
+    {
+      "id": 509226647781,
+      "title": "Cotton sarees",
+      "handle": "cotton-sarees",
+      "description": null,
+      "published_at": "2026-05-28T10:42:17+05:30",
+      "updated_at": "2026-10-28T16:40:48+05:30",
+      "image": null,
+      "products_count": 82
+    },
+    {
+      "id": 388277600485,
+      "title": "Earrings",
+      "handle": "earrings",
+      "description": "",
+      "published_at": "2021-12-20T13:04:12+05:30",
+      "updated_at": "2026-05-26T21:54:04+05:30",
+      "image": null,
+      "products_count": 56
+    },
+    {
+      "id": 392260714725,
+      "title": "Feeding & Maternity wear",
+      "handle": "maternity-feeding-gowns",
+      "description": "",
+      "published_at": "2024-11-30T17:19:39+05:30",
+      "updated_at": "2026-05-26T21:54:05+05:30",
+      "image": null,
+      "products_count": 15
+    },
+    {
+      "id": 474351796453,
+      "title": "Festive Sarees",
+      "handle": "varamahalakshmi-festive-sarees",
+      "description": "",
+      "published_at": "2025-07-02T13:53:27+05:30",
+      "updated_at": "2026-10-28T16:40:48+05:30",
+      "image": {
+        "id": 1700611358949,
+        "created_at": "2026-01-06T21:59:35+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/rn-image_picker_lib_temp_0f4260e0-47c0-4e53-80ec-f41ac2984758.jpg?v=1768653333",
+        "alt": ""
+      },
+      "products_count": 1191
+    },
+    {
+      "id": 388275273957,
+      "title": "Gifts",
+      "handle": "gifts",
+      "description": "",
+      "published_at": "2026-01-17T13:00:01+05:30",
+      "updated_at": "2026-10-11T16:43:00+05:30",
+      "image": {
+        "id": 1700611817701,
+        "created_at": "2026-01-06T23:03:56+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/rn-image_picker_lib_temp_18896c4d-fe3d-4f21-a663-07295a5dfb7e.jpg?v=1786624716",
+        "alt": null
+      },
+      "products_count": 84
+    },
+    {
+      "id": 494615101669,
+      "title": "Jewellery collection",
+      "handle": "jewellery-collection",
+      "description": null,
+      "published_at": "2026-01-21T11:36:00+05:30",
+      "updated_at": "2026-10-21T17:15:35+05:30",
+      "image": {
+        "id": 1700719722725,
+        "created_at": "2026-01-21T14:32:06+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/rn-image_picker_lib_temp_33c4baf8-d940-498e-81db-3aff15d743b6.jpg?v=1768986297",
+        "alt": ""
+      },
+      "products_count": 123
+    },
+    {
+      "id": 506346799333,
+      "title": "Kurtis",
+      "handle": "kurtis-combo",
+      "description": null,
+      "published_at": "2026-04-15T11:09:55+05:30",
+      "updated_at": "2026-10-28T16:40:48+05:30",
+      "image": null,
+      "products_count": 193
+    },
+    {
+      "id": 508551921893,
+      "title": "Kurtis Collections",
+      "handle": "kurtis-collections",
+      "description": null,
+      "published_at": "2026-05-21T13:03:08+05:30",
+      "updated_at": "2026-10-21T16:33:30+05:30",
+      "image": null,
+      "products_count": 35
+    },
+    {
+      "id": 513869349093,
+      "title": "Linen Blended Pants",
+      "handle": "linen-blended-pants",
+      "description": null,
+      "published_at": "2026-07-20T20:08:37+05:30",
+      "updated_at": "2026-07-20T20:08:38+05:30",
+      "image": null,
+      "products_count": 0
+    },
+    {
+      "id": 513712750821,
+      "title": "Linen Pants",
+      "handle": "linen-pants",
+      "description": "",
+      "published_at": "2026-07-16T20:09:19+05:30",
+      "updated_at": "2026-10-17T16:49:22+05:30",
+      "image": null,
+      "products_count": 12
+    },
+    {
+      "id": 513869283557,
+      "title": "Lycra Pants",
+      "handle": "lycra-pants",
+      "description": null,
+      "published_at": "2026-07-20T20:07:26+05:30",
+      "updated_at": "2026-10-28T16:40:48+05:30",
+      "image": null,
+      "products_count": 60
+    },
+    {
+      "id": 493250248933,
+      "title": "Munga silk sarees",
+      "handle": "mung-silk-sarees-collection",
+      "description": null,
+      "published_at": "2025-12-30T14:58:21+05:30",
+      "updated_at": "2026-10-24T12:51:04+05:30",
+      "image": {
+        "id": 1700609687781,
+        "created_at": "2026-01-06T13:25:00+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/rn-image_picker_lib_temp_bad7f380-5656-4d72-bf27-c7e3fb671dfa.png?v=1772612602",
+        "alt": ""
+      },
+      "products_count": 237
+    },
+    {
+      "id": 470917480677,
+      "title": "Mysore Silk Collections",
+      "handle": "mysore-silk-collections",
+      "description": "",
+      "published_at": "2025-07-31T12:11:03+05:30",
+      "updated_at": "2026-10-24T12:39:31+05:30",
+      "image": {
+        "id": 1697284751589,
+        "created_at": "2025-06-10T14:46:40+05:30",
+        "src": "https://cdn.shopify.com/s/files/1/0616/4778/2117/collections/rn-image_picker_lib_temp_2218bc09-f33e-45d2-a454-d02c1bd0e992.png?v=1773393991",
+        "alt": ""
+      },
+      "products_count": 1362
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+<footer class="bg-white border-t border-neutral-200 text-neutral-800 text-xs py-16 select-none">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-neutral-200">
+      
+      <!-- Brand & Legal Info -->
+      <div class="space-y-4">
+        <span class="font-sans font-extrabold text-lg uppercase tracking-wider text-black block">
+          {{ section.settings.brand_name | default: shop.name | default: 'VASTRA ABHARANA' }}
+        </span>
+        <p class="text-neutral-500 leading-relaxed font-sans">
+          {{ section.settings.about_text | default: 'Launched in 2018 in Bengaluru to bring women timeless handcrafted ethnic wear at direct weaver prices with impeccable customer care.' }}
+        </p>
+        <div class="pt-2 text-[11px] space-y-1 text-neutral-400 font-sans font-medium">
+          <p>Trade Entity: <span class="text-neutral-700 font-bold">BALASYBRAMANIAM KANAGAPRIYA</span></p>
+          <p>Legal Name: <span class="text-neutral-700">Vastra Abharana</span></p>
+          <p>GSTIN: <span class="text-orange-600 font-bold">29DKQPK5756N1Z1</span></p>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-sans font-bold text-black uppercase tracking-wider text-xs mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-neutral-600">
+          <li><a href="/pages/about-us" class="hover:text-black transition-colors">Our Weaver Story</a></li>
+          <li><a href="/pages/privacy-policy" class="hover:text-black transition-colors">Privacy Policy</a></li>
+          <li><a href="/pages/shipping-policy" class="hover:text-black transition-colors">Shipping & Returns</a></li>
+          <li><a href="/pages/terms-conditions" class="hover:text-black transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div>
+        <h4 class="font-sans font-bold text-black uppercase tracking-wider text-xs mb-4">Categories</h4>
+        <ul class="space-y-2 text-neutral-600">
+          <li><a href="/collections/sarees" class="hover:text-black transition-colors">Pure Mysore Silk Sarees</a></li>
+          <li><a href="/collections/sarees" class="hover:text-black transition-colors">Bridal Kanjeevarams</a></li>
+          <li><a href="/collections/salwar-suits" class="hover:text-black transition-colors">Aarvi Cotton Suits</a></li>
+          <li><a href="/collections/jewelry" class="hover:text-black transition-colors">22K Gold Temple Jewelry</a></li>
+        </ul>
+      </div>
+
+      <!-- Verified Contact -->
+      <div>
+        <h4 class="font-sans font-bold text-black uppercase tracking-wider text-xs mb-4">Atelier & Concierge</h4>
+        <div class="space-y-2.5 text-neutral-600">
+          <p class="leading-snug">
+            Ground Floor, 796/2, 80 Feet Road, Next To Parimala Sweets, BSK 3rd Stage Girinagar VBHCS, Bengaluru 560085
+          </p>
+          <p>
+            Phone: <a href="tel:+918073394735" class="hover:text-black font-sans font-semibold">+91-8073394735</a>
+          </p>
+          <p>
+            Email: <a href="mailto:vastraabharana1@gmail.com" class="hover:text-black font-sans font-medium">vastraabharana1@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-neutral-400">
+      <p>© {{ 'now' | date: '%Y' }} {{ section.settings.copyright_text | default: 'Vastra Abharana. Authentic Indian Craftsmanship.' }}</p>
+      <div class="flex items-center gap-4 text-[11px] font-medium">
+        <span>Handloom Silk Mark</span>
+        <span>•</span>
+        <span>Made with Pride in Bengaluru</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer Editorial",
+  "settings": [
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand Display Name",
+      "default": "VASTRA ABHARANA"
+    },
+    {
+      "type": "textarea",
+      "id": "about_text",
+      "label": "About Brand Text",
+      "default": "Launched in 2018 in Bengaluru to bring women timeless handcrafted ethnic wear at direct weaver prices with impeccable customer care."
+    },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "Copyright Text",
+      "default": "Vastra Abharana. Authentic Indian Craftsmanship."
+    }
+  ]
+}
+{% endschema %}
