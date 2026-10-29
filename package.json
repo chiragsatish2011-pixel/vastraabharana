@@ -1,0 +1,12 @@
+{
+  "name": "vastraabharana-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vastra Abharana - Luxury Indian Ethnic Wear & Handcrafted Heritage",
+  "scripts": {
+    "dev": "npm --prefix storefront run dev",
+    "build": "npm --prefix storefront run build",
+    "preview": "npm --prefix storefront run preview",
+    "vercel-build": "cd storefront && npm install && npm run build"
+  }
+}

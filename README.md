@@ -74,3 +74,18 @@ VA Website/
 - **Primary Categories:** Sarees (782), Salwars/Suits (761), Blouses (101), Accessories (95), Nightwear/Maternity (59)
 - **Typography:** Ovo (Headings) + Instrument Sans (Body)
 - **Branding Palette:** Terracotta (`#A04508`), Espresso (`#572A05`), Amber Gold (`#845401`), Ivory Warm Cream (`#FFFCF0`)
+
+---
+
+## 🚀 Deploying to Vercel (1-Click Zero-Config)
+
+This repository is pre-configured and 100% production-ready for deployment on **[Vercel](https://vercel.com/)**:
+
+1. Log into your [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New"** > **"Project"**.
+2. Select your repository: `chiragsatish2011-pixel/vastraabharana`.
+3. Vercel automatically detects the root [`vercel.json`](./vercel.json) and [`package.json`](./package.json):
+   - **Framework Preset:** Vite
+   - **Build Command:** `cd storefront && npm install && npm run build`
+   - **Output Directory:** `storefront/dist`
+4. Click **Deploy**.
+5. Your live high-performance 3D storefront will be live on Vercel Edge with complete SPA routing and instant asset caching.
